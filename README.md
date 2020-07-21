@@ -9,10 +9,10 @@ I made this repo as a proof with hard core evidence how much equivalent are `swi
 As a main metric, I've used a build-in Visual Studio Code Metric analyser with the Maintainability index. The code maintainability is popular buzzword these day because a maintenance of the obsolete, non-transparent code is expensive.
 
 # Analysed function definition
-A task is simple. Design a function which analyses an input object and if it is a string, return "One word" if string has `Length` property lower than 5, "God knows what" for any another `string` and an empty `string` when the input object is not a `string` at all.
+A task is simple. Design a function which analyses an input object and if it is a string, return "One word" if string has `Length` property is lower than 5, "God knows what" for any another `string` and an empty `string` when the input object is not a `string` at all.
 
 # Solution
-I designed a several solution which I could come up with. They are sorted according the maintainability index in ascending order.
+I designed several solutions that I could come up with. They are sorted according the maintainability index in ascending order.
 
 ## 1. Junior developer solution (MI 77)
 A very poor solution based on C# 6, coding style around 2015 and lack of experience.
@@ -48,3 +48,6 @@ Believe or not, this solution based on the ternary operator that is not the best
 And the winner is... Surprise, surprise... A solution based on the switch expression. Why? Well, it was design to reduce the boiler-plate code and speed up the coding. It produce the least amount of source code that a quite easy to read.
 
 ![Preview](/Assets/MI90.png)
+
+# Conclusion
+In this simple task, we can see that the `switch` expressions actually have some positive impact at code base and based on this fact, we can conclude that the **switch expressions should not be avoided in modern C# code bases**.
